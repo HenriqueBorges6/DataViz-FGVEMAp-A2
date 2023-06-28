@@ -1,3 +1,4 @@
+# Para rodar o código: bokeh serve --show vis1.py    
 import pandas as pd
 import numpy as np
 from bokeh.plotting import figure, curdoc
@@ -66,5 +67,3 @@ figure.add_layout(citation)
 # Exibe o gráfico no navegador
 curdoc().add_root(select)
 curdoc().add_root(figure)
-
-
