@@ -1,11 +1,9 @@
 #Bibliotecas utilizadas
-import pandas as pd
 import numpy as np
 from bokeh.plotting import figure, show
 from myfunctions import cds_generator
 from bokeh.models import HoverTool, ColumnDataSource
 from bokeh.io import curdoc
-
 
 #Aplicando um tema
 curdoc().theme = "light_minimal"
@@ -28,7 +26,6 @@ sabor_jitter = np.random.uniform(-jitter_range, jitter_range, len(sabor))
 aroma += aroma_jitter
 sabor += sabor_jitter
 #Usamos o jitter para conseguir ter uma melhor noção da quantidade de amostras
-
 
 #preparando o gráfico
 aroma_sabor = figure(title="Cheira bem, é bom", 
