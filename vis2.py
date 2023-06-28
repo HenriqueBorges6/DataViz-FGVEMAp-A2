@@ -1,3 +1,4 @@
+# Para rodar o código: bokeh serve --show vis2.py    
 import pandas as pd
 import numpy as np
 from bokeh.plotting import figure, curdoc
@@ -7,11 +8,11 @@ df = pd.read_csv("cleaned_coffee_dataset.csv")
 country_counts = df['Country of Origin'].value_counts()
 
 countries = country_counts.index.tolist()
-counts = country_counts.tolist()
+cont = country_counts.tolist()
 
 bar_plot = figure(x_range=countries, height=600, width=850)
 
-bar_plot.vbar(x=countries, top=counts, width=0.8)
+bar_plot.vbar(x=countries, top=cont, width=0.8)
 
 bar_plot.xaxis.major_label_orientation = 'vertical'
 
