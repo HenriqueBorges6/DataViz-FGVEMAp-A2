@@ -32,6 +32,8 @@ def scatter_plot(data_path):
     figure_plot.yaxis.axis_label = "Acidez"
     figure_plot.title.text = "Sabor x Acidez"
     figure_plot.title.align = "center"
+    figure_plot.title.text_font_size = "12pt"
+
 
     # Customizando as linhas e grids dos gráficos
     figure_plot.grid.grid_line_color = "lightgray"
