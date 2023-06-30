@@ -19,3 +19,8 @@
     Favor utilizar o dataset resultante desse processo
 
     preprocessed_coffee_dataset.csv
+
+28/06 (gabriel)
+
+    fiz mudanças na paleta de cores do gráficos
+    e adicionei annotations e interações no gráfico
