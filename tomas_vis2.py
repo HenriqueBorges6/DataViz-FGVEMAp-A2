@@ -64,7 +64,7 @@ bar_plot.title.text = "Contagem dos países"
 bar_plot.title.align = "center"
 bar_plot.title.text_font_size = "12pt"
 
-# Criar o controle deslizante de intervalo
+# Criar o controle deslizante do intervalo (utilizado filtrar dados)
 range_slider = RangeSlider(start=0, end=max(cont), value=(0, max(cont)), step=1, title="Intervalo")
 
 # Criar o botão de redefinir
