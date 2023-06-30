@@ -103,14 +103,14 @@ def select_country_callback(attr, old, new):
     box_plot.xaxis.major_label_overrides = {x: str(country) for x, country in zip(x_values, new_group_df.groups.keys())}
 
     # Limpar as hastes anteriores
-    box_plot.renderer = [box_plot.renderers[0]]
+    box_plot.renderers = [box_plot.renderers[0]]
 
     # Plotar as hastes (whiskers) para o país selecionado
     for x, (_, values) in zip(x_values, new_group_df):
         iqr = values.quantile(0.75) - values.quantile(0.25)
-        lower_whisker = max(values.quantile(0.25) - 1.5 *iqr, df[value_column_name].min())
+        lower_whisker = max(values.quantile(0.25) - 1.5 * iqr, df[value_column_name].min())
 
-        upper_whisker = min(values.quantile(0.75) + 1.5 *iqr, df[value_column_name].max())
+        upper_whisker = min(values.quantile(0.75) + 1.5 * iqr, df[value_column_name].max())
 
         box_plot.segment(x, lower_whisker, x, values.min(), line_color="black", line_width=line_width)
 
