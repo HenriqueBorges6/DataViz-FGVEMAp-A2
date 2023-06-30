@@ -64,7 +64,7 @@ bar_plot.xaxis.axis_label = "Países"
 bar_plot.yaxis.axis_label = "Contagem"
 
 # Configurar o título do gráfico
-bar_plot.title.text = "Contagem de Category Two Defects por país"
+bar_plot.title.text = "Contagem de Defeitos de Categoria 2, por país produtor"
 bar_plot.title.align = "center"
 
 # Criar o controle deslizante de faixa
