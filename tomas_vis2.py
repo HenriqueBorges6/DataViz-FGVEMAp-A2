@@ -5,7 +5,7 @@ from bokeh.models import ColumnDataSource, HoverTool, PanTool, ResetTool, WheelZ
 from bokeh.layouts import column
 from bokeh.models.widgets import RangeSlider, Button
 
-# Carregar o conjunto de dados
+# Carregar os dados
 df = pd.read_csv("cleaned_coffee_dataset.csv")
 
 # Contar as ocorrências de cada país
@@ -74,7 +74,7 @@ reset_button = Button(label="Redefinir")
 def reset():
     range_slider.value = (0, max(cont))
 
-# Função de retorno de chamada para filtrar com base no controle deslizante de intervalo
+# Função de retorno de chamada para filtrar com base no deslizante(para filtrar os dados) por intervalo
 def filter_data(attr, old, new):
     lower, upper = range_slider.value
     filtered_data = df[df['Country of Origin'].isin(countries)]
