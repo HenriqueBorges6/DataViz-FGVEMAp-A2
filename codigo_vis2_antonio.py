@@ -2,7 +2,7 @@ from bokeh.plotting import figure, show
 from bokeh.models import HoverTool
 from cds_reader import source_para_vis_2, data_para_vis_2
 
-quakers_aroma = figure(title="Quakers: Grãos imaturos prejudicam o aroma do café",
+quakers_aroma = figure(title="Quakers: Grãos imaturos estragam o aroma do café",
                        x_axis_label="Quakers",
                        y_axis_label="Nota do Aroma: 1 a 10",
                        width=513,
