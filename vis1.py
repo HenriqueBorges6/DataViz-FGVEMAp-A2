@@ -40,8 +40,8 @@ figure.yaxis.axis_line_width = 1.2
 
 # Adicionei 'hoover tooltips' para o gráfico de dispersão'
 tooltips = [("Grau do Sabor", "@Flavor"), ("Grau de ascidez", "@Acidity"), ("Companhia", "@Company")]
-hover_tool = HoverTool(renderers=[scatter_plot], tooltips=tooltips)
-figure.add_tools(hover_tool)
+hover= HoverTool(renderers=[scatter_plot], tooltips=tooltips)
+figure.add_tools(hover)
                                                                                                 
 # criei uma lista de todos os países presentes no dataset
 countries = ["All"] + list(df["Country of Origin"].unique())
