@@ -32,8 +32,8 @@ p = figure(
     title="Cheira bem, é bom",
     x_axis_label="Aroma",
     y_axis_label="Sabor",
-    width=513,  
-    height=483,
+    width=600,  
+    height=400,
     background_fill_color="#F0F0F0",
 )
 

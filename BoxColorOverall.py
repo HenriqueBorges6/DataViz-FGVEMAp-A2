@@ -36,7 +36,7 @@ df_dados_cores = pd.DataFrame(dados_cores)
 source = ColumnDataSource(df_dados_cores)
 
 # Criar o gráfico de boxplot para cada tipo de Color
-p = figure(y_range=tipos_cores, width=400, height=400, title="Boxplot por Tipo de Cor")
+p = figure(y_range=tipos_cores, width=600, height=400, title="Boxplot por Tipo de Cor")
 p.hbar(y='cor', left='q1', right='q3', height=0.7, fill_color="#F5DEB3", line_color="black", source=source)
 p.segment(y0='cor', x0='whisker_bottom', y1='cor', x1='whisker_top', line_width=2, line_color="black", source=source)
 p.hbar(y='cor', left='q2', right='q2', height=0.5, fill_color="white", line_color="black", source=source)

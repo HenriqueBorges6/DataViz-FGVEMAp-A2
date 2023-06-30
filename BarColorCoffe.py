@@ -34,7 +34,7 @@ top_7_cores = top_7_cores.iloc[::-1]
 cores_personalizadas = cores_personalizadas[::-1]
 
 # Criando o gráfico de barras horizontais com as cores personalizadas
-p = figure(y_range=top_7_cores.index.tolist(), width=513 ,height=483,
+p = figure(y_range=top_7_cores.index.tolist(), width=600 ,height=400,
            title="Contagem de Cores de Café",
            background_fill_color="#F0F0F0")
 
@@ -73,7 +73,7 @@ top_7_cores['Outras Cores'] = total_outras_cores
 cores_personalizadas = ['#008000', '#0EBE45', '#1BC4B4', '#1771B4', '#ADFF2F', '#964B00', '#78ABAB']
 
 # Criando o gráfico de barras
-qtd_cores = figure(x_range=top_7_cores.index.tolist(), width=513 ,height=483, title="Contagem de Cores de Café",
+qtd_cores = figure(x_range=top_7_cores.index.tolist(), width=600 ,height=400, title="Contagem de Cores de Café",
                    background_fill_color="#F0F0F0")
 qtd_cores.vbar(x=top_7_cores.index.tolist(), top=top_7_cores.values, width=0.9,
        fill_color=cores_personalizadas)
