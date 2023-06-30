@@ -1,3 +1,4 @@
+# Para rodar o código: bokeh serve -- tomas_vis_geral.py      
 import tomas_vis1
 import tomas_vis2
 import tomas_vis3
