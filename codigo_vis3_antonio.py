@@ -97,4 +97,4 @@ reset_button.on_click(reset)
 layout = column(bar_plot, range_slider, reset_button)
 
 # Exibir a aplicação
-curdoc().add_root(layout)
+show(layout)
